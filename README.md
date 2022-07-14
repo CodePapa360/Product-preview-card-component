@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://codepapa360.github.io/Product-preview-card-component/)
+- [Live Site URL](https://codepapa360.github.io/Product-preview-card-component/)
 
 ## My process
 
