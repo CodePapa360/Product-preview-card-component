@@ -1,0 +1,131 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.desktop-img{
+    display: none;
+}
+
+.top-container{
+    margin: 20px;
+    max-width: 1440px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--White);
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.bottom-container{
+    padding: 20px;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: small;
+    color: var(--Very-dark-blue);
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+h1{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+p{
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--Very-dark-blue);
+}
+
+.prices h3{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.6rem;
+    color: var(--Dark-cyan);
+    position: relative;
+    margin: 1rem 0;
+}
+
+.prices h3::after{
+    content: "$169.99";
+    color: var(--Dark-grayish-blue);
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: line-through;
+}
+
+.card-btn{
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    width: 100%;
+    border-radius: 10px;
+    height: 2rem;
+    font-family: inherit;
+    vertical-align: middle;
+}
+
+.card-btn:hover,
+.card-btn:focus{
+    background-color: hsl(159, 36%, 22%);
+}
+
+.card-btn img{
+    margin-right: 10px;
+    height: 11px;
+}
+
+
+@media (min-width: 375px){
+    .desktop-img{
+        display: block;
+        background-image: url(images/image-product-desktop.jpg);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .mobile-img{
+        display: none;
+    }
+
+    .top-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 28rem;
+        overflow: hidden;
+    }
+
+
+}
